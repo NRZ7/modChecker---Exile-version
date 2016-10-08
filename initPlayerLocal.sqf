@@ -10,19 +10,15 @@ uiSleep 3;
 firstCheck = 0; 
 execVM "addons\modChecker\modChecker.sqf";
 
+/*Note, if you have Exile ProtectionRemember.sqf, use this
+
 ///////////////////////////////////////////////////////////////////////////
 // MOD CHECKER + PROTECTION REMEMBER
 ///////////////////////////////////////////////////////////////////////////
 
-/*Note, if you have Exile ProtectionRemember.sqf, use this
-
 waitUntil {!isNull findDisplay 46 && !isNil 'ExileClientLoadedIn' && getPlayerUID player != ''}; // wait until player is in spawned
 uiSleep 3;
 execVM "addons\scripts\protectionRemember.sqf";
-///////////////////////////////////////////////////////////////////////////
-// MOD CHECKER
-///////////////////////////////////////////////////////////////////////////
-
 firstCheck = 0; 
 execVM "addons\modChecker\modChecker.sqf";
 
