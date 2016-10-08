@@ -6,6 +6,9 @@ If no errors are generated, mod checker runs in silent without popup
 
 https://i.imgur.com/yseE9pL.png
 
+Please follow the next install instructions and read all scripts and comments
+http://www.exilemod.com/topic/18743-mod-checker/
+
 // * This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
 // * https://creativecommons.org/licenses/by-sa/4.0/
 
@@ -13,4 +16,3 @@ Feel free to modify or adapt my work.
 
 This project, contains some code from Repentz Advanced Rulez http://www.exilemod.com/topic/10375-advanced-server-rules-for-xm8/
 
-Please, read carefully all instructions and read all scripts and comments.
