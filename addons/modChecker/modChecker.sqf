@@ -16,7 +16,7 @@ errorLevel = 0; // Do not touch. Set errors to 0 before run modChecker.sqf
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Change "Exile_Client" to name of the CfgPatches from desired mod.
-// You can find under editor. ("Tools" - "Config Viewer" - "Configfile" - "CfpPatches")
+// You can find under editor. ("Tools" - "Config Viewer" - "Configfile" - "CfgPatches")
 if (isClass(configFile >> "CfgPatches" >> "Exile_Client")) then  {  
 // Change checkExile to your desired and unique mod variable name
 // Change "Exile Mod is" to your mod string. For advanced users, can change size, color, allign, etc.
