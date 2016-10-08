@@ -25,7 +25,7 @@ if (isClass(configFile >> "CfgPatches" >> "Exile_Client")) then  {
 	errorLevel = errorLevel + 99
 	};
 
-// Esseker Example
+// Esseker Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "Esseker")) then  {  
 		checkEsseker = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Esseker Map is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
@@ -33,7 +33,7 @@ if (isClass(configFile >> "CfgPatches" >> "Esseker")) then  {
 		errorLevel = errorLevel + 99
 	};
 
-// Zombis & Demonds Example
+// Zombis & Demonds Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "Ryanzombies")) then  {  
 		checkRyan = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Zombies and Demonds is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
@@ -41,23 +41,23 @@ if (isClass(configFile >> "CfgPatches" >> "Ryanzombies")) then  {
 		errorLevel = errorLevel + 99
 	};
 
-// CUP_Weapons Example
+// CUP_Weapons Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "CUP_Weapons_WeaponsCore")) then  {  
 		checkWeapons = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Weapons is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 		checkWeapons = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Weapons is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
-		errorLevel = errorLevel + 1
+		errorLevel = errorLevel + 99
 	};
 
-// CUP_Vehicles Example
+// CUP_Vehicles Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "CUP_Vehicles_Core")) then  {  
 		checkVehicles = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Vehicles is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 		checkVehicles = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Vehicles is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
-		errorLevel = errorLevel + 1
+		errorLevel = errorLevel + 99
 	};
 
-// CUP_TerrainCore Example
+// CUP_TerrainCore Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "CUP_Worlds")) then  {  
 		checkTerrain = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Terrain Core is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
@@ -65,15 +65,15 @@ if (isClass(configFile >> "CfgPatches" >> "CUP_Worlds")) then  {
 		errorLevel = errorLevel + 1
 	};
 
-// CUP_Units Example
+// CUP_Units Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_People_Core")) then  {  
 		checkUnits = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Units is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 		checkUnits = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CUP Units is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
-		errorLevel = errorLevel + 1
+		errorLevel = errorLevel + 99
 	};
 
-// Community Base Addon Example
+// Community Base Addon Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then  
 	{  
 		checkCBA = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CBA_A3 is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
@@ -82,6 +82,10 @@ if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then
 		errorLevel = errorLevel + 1
 	};
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// DO NOT TOUCH UNDER THIS LINE IF DON'T KNOW WHAT ARE YOU DOING
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
 if (errorLevel > 0) then {
 	warnMessage =  "<t color='#ff0000' size='1.3' shadow='1' shadowColor='#000000' align='center'>Some is WRONG with your MODS</t><br/>";
 	} else {

@@ -14,7 +14,7 @@
 	Link: http://www.exilemod.com/topic/10375-advanced-server-rules-for-xm8/
 */
 
-if ((firstCheck == 0) && (errorLevel > 0)) then { player allowdamage false }; // God Mode ON to avoid die and close dialog only if ModCheckerDisplay is auto opened.
+if ((firstCheck == 0) && (errorLevel > 0)) then { player allowdamage false }; // God Mode ON to avoid die and close dialog only if ModCheckerDisplay is auto executed.
 
 disableSerialization;
 [
@@ -36,7 +36,8 @@ _textSpoiler = _display displayctrl 1101;
 _text2 = _display displayCtrl 1102;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-// Remember to add-delete-modify the same mod variable names like modChecker.sqf
+// 							CUSTOMIZABLE PART HERE
+// Remember to add-delete-modify the same mod variable names used in modChecker.sqf
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 // Display header
@@ -47,7 +48,7 @@ _message = _message + "<t align='center'>_______________________________________
 _message = _message + warnMessage;
 _message = _message + "<t align='center'><br />";
 
-//Mod variable names
+//Mod variable names - MODIFY HERE
 _message = _message + checkExile;
 _message = _message + checkEsseker;
 _message = _message + checkRyan;
@@ -57,14 +58,14 @@ _message = _message + checkUnits;
 _message = _message + checkTerrain;
 _message = _message + checkCBA;
 
-// Custom message with community links
+// Custom message with community links - MODIFY HERE
 _message = _message + "<br />";
 _message = _message + "If you get any error, please, read the following links<br /><br />";
 _message = _message + "Download the mods from <a href= 'http://steamcommunity.com/sharedfiles/filedetails/?id=752130537' color='#ff9900'>Steam Workshop</a> Only click on Subscribe!<br />";
 _message = _message + "<a href= 'http://standarol.com/index.php/topic,674.0.html' color='#ff9900'>Guía de lanzamiento e instalación de mods [ESPAÑOL]</a> </t><br /><br />";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-// END OF CUSTOMIZABLE TEXT, DO NOT TOUCH UNDER THIS LINE IF YOU DON'T KWOW WHAT ARE YOU WANT
+// END OF CUSTOMIZABLE TEXT, DO NOT TOUCH UNDER THIS LINE IF YOU DON'T KWOW WHAT ARE YOU DOING
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Fill only the first text
