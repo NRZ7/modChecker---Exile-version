@@ -1,3 +1,14 @@
+// **********************************************************************************************************
+// * This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
+// * https://creativecommons.org/licenses/by-sa/4.0/
+// **********************************************************************************************************
+//	@file Name: xm8modChecker.sqf
+//	@file Author: jmayr2000 (from exilemod.com)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// DO NOT TOUCH UNDER THIS LINE IF DON'T KNOW WHAT ARE YOU DOING
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 private["_display","_message","_strTxt","_pos"];
 
 try
@@ -8,8 +19,6 @@ try
 	if(count _message == 0)exitWith{
 		throw "No server info provided";
 	};
-	
-	if ((firstCheck == 0) && (errorLevel > 0)) then { player allowdamage false }; // God Mode ON to avoid die and close dialog only if ModCheckerDisplay is auto executed.
 
 disableSerialization;
 [
@@ -22,16 +31,7 @@ disableSerialization;
 	8
 ] spawn BIS_fnc_dynamicText;
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-// 							CUSTOMIZABLE PART HERE
-// Remember to add-delete-modify the same mod variable names used in xm8modChecker.sqf
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-#include "..\..\..\..\addons\modChecker\modCheckerDisplayConfig.hpp"
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-// END OF CUSTOMIZABLE TEXT, DO NOT TOUCH UNDER THIS LINE IF YOU DON'T KWOW WHAT ARE YOU DOING
-////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "..\..\..\..\addons\modChecker\modCheckerDisplay.hpp"
 	
 	_display = uiNameSpace getVariable ["RscExileXM8", displayNull];
 	if(isNull _display)exitWith{

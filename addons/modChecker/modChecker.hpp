@@ -1,8 +1,21 @@
-// Exile_Client Example
-// Change "Exile_Client" to name of the Cfg patche from desired mod
+// **********************************************************************************************************
+// * This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
+// * https://creativecommons.org/licenses/by-sa/4.0/
+// **********************************************************************************************************
+//	@file Name: modChecker.sqf
+//	@file Author: NRZ7 (www.standarol.com)
+//	@description: This script check the mods loaded by the client. If any mod is not loaded, pop's a screen with detailed information and clickable community links (modCheckerDisplay.sqf).
+//					You can configure requiered addons (error 99) or optional addons (error 1). If any required mod fails, the client load "You Loose" screen after close the dialog.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Exile_Client Example - READ TO UNDERSTAND - DO NOT TOUCH - READ - DO NOT TOUCH - READ - DO NOT TOUCH
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Change "Exile_Client" to name of the CfgPatches from desired mod.
+// You can find under editor. ("Tools" - "Config Viewer" - "Configfile" - "CfgPatches")
 if (isClass(configFile >> "CfgPatches" >> "Exile_Client")) then  {  
-// Change checkExile to your desired mod variable name
-// Change "Exile Mod is" to your mod string
+// Change checkExile to your desired and unique mod variable name
+// Change "Exile Mod is" to your mod string. For advanced users, can change size, color, allign, etc.
 		checkExile =  "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Exile Mod is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 // Change "Exile Mod is" to your mod string
@@ -11,6 +24,10 @@ if (isClass(configFile >> "CfgPatches" >> "Exile_Client")) then  {
 	errorLevel = errorLevel + 99
 	};
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// START OF MODS CONFIG - EDIT OR DELETE UNDER THIS LINE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
 // Esseker Example - DELETE OR MODIFY
 if (isClass(configFile >> "CfgPatches" >> "Esseker")) then  {  
 		checkEsseker = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Esseker Map is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
@@ -67,3 +84,16 @@ if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then
 		checkCBA = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CBA_A3 is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
 		errorLevel = errorLevel + 1
 	};
+
+	
+// YOU CAN ADD MORE MODS, ADD FOR EACH SOME CODE LIKE THIS
+	
+/*
+if (isClass(configFile >> "CfgPatches" >> "YOUR_MOD_CLASSNAME")) then  
+	{  
+		checkYOURMOD = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>YOUR MOD is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
+	} else { 
+		checkYOURMOD = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>YOUR MOD is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
+		errorLevel = errorLevel + 1
+	};
+*/

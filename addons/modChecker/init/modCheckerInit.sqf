@@ -8,14 +8,13 @@
 //					You can configure requiered addons (error 99) or optional addons (error 1). If any required mod fails, the client load "You Loose" screen after close the dialog.
 //			
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// DO NOT TOUCH UNDER THIS LINE IF DON'T KNOW WHAT ARE YOU DOING
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 errorLevel = 0;
 
-#include "modCheckerConfig.hpp"
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// DO NOT TOUCH UNDER THIS LINE IF DON'T KNOW WHAT ARE YOU DOING
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+#include "..\modChecker.hpp"	
 	
 if (errorLevel > 0) then {
 	warnMessage =  "<t color='#ff0000' size='1.3' shadow='1' shadowColor='#000000' align='center'>Some is WRONG with your MODS</t><br/>";
@@ -26,7 +25,7 @@ if (errorLevel > 0) then {
 if ((errorLevel == 0) && (firstCheck == 0)) then {
 	firstCheck = 1 // Do nothing
 	} else {
-	execVM "addons\modChecker\modCheckerDisplay.sqf"
+	execVM "addons\modChecker\init\modCheckerDisplay.sqf"
 	};
 
 // execVM "addons\modChecker\modCheckerDisplay.sqf"
