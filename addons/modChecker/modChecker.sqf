@@ -81,8 +81,7 @@ if (isClass(configFile >> "CfgPatches" >> "CUP_Creatures_People_Core")) then  {
 	};
 
 // Community Base Addon Example - DELETE OR MODIFY
-if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then  
-	{  
+if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then  {  
 		checkCBA = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CBA_A3 is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 		checkCBA = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>CBA_A3 is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
@@ -93,8 +92,7 @@ if (isClass(configFile >> "CfgPatches" >> "CBA_main")) then
 // YOU CAN ADD MORE MODS, ADD FOR EACH SOME CODE LIKE THIS
 	
 /*
-if (isClass(configFile >> "CfgPatches" >> "YOUR_MOD_CLASSNAME")) then  
-	{  
+if (isClass(configFile >> "CfgPatches" >> "YOUR_MOD_CLASSNAME")) then {  
 		checkYOURMOD = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>YOUR MOD is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 		checkYOURMOD = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>YOUR MOD is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
