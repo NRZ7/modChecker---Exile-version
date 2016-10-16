@@ -14,7 +14,7 @@
 		
 errorLevel = 0;
 
-#include "..\modChecker.hpp"	
+#include "..\modConfig.hpp"	
 	
 if (errorLevel > 0) then {
 	warnMessage =  "<t color='#ff0000' size='1.3' shadow='1' shadowColor='#000000' align='center'>Some is WRONG with your MODS</t><br/>";

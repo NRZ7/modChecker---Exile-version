@@ -31,7 +31,7 @@ disableSerialization;
 	8
 ] spawn BIS_fnc_dynamicText;
 
-#include "..\..\..\..\addons\modChecker\modCheckerDisplay.hpp"
+#include "..\..\..\..\addons\modChecker\displayConfig.hpp"
 	
 	_display = uiNameSpace getVariable ["RscExileXM8", displayNull];
 	if(isNull _display)exitWith{

@@ -39,7 +39,7 @@ _buttonSpoiler = _display displayctrl 2400;
 _textSpoiler = _display displayctrl 1101;
 _text2 = _display displayCtrl 1102;
 
-#include "..\modCheckerDisplay.hpp"
+#include "..\displayConfig.hpp"
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
