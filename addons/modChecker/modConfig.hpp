@@ -20,9 +20,9 @@ if (isClass(configFile >> "CfgPatches" >> "Exile_Client")) then
 		modCheckExile =  "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Exile Mod is</t><t color='#2fd402' size='0.9' shadow='1' shadowColor='#000000' align='center'> found!</t><br/>";
 	} else { 
 // Change "Exile Mod is" to your mod string
-	modCheckExile = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Exile Mod is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
+		modCheckExile = "<t size='0.9' shadow='1' shadowColor='#000000' align='center'>Exile Mod is</t><t color='#ff0000' size='0.9' shadow='1' shadowColor='#000000' align='center'> NOT FOUND!</t><br/>";
 // Set 99 to Required, Set 1 to optional
-	errorLevel = errorLevel + 99
+		errorLevel = errorLevel + 99
 	};
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
