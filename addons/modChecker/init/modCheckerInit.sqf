@@ -28,6 +28,6 @@ if ((errorLevel == 0) && (firstCheck == 0)) then {
 	execVM "addons\modChecker\init\modCheckerDisplay.sqf"
 	};
 
-// execVM "addons\modChecker\modCheckerDisplay.sqf"
+// execVM "addons\modChecker\init\modCheckerDisplay.sqf"
 
 
