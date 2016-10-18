@@ -8,7 +8,7 @@ waitUntil {!isNull findDisplay 46 && !isNil 'ExileClientLoadedIn' && getPlayerUI
 uiSleep 3;
 
 firstCheck = 0; 
-execVM "addons\modChecker\modChecker.sqf";
+execVM "addons\modChecker\init\modCheckerInit.sqf";
 
 /*Note, if you have Exile ProtectionRemember.sqf, use this
 
