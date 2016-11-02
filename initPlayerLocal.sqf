@@ -20,6 +20,6 @@ waitUntil {!isNull findDisplay 46 && !isNil 'ExileClientLoadedIn' && getPlayerUI
 uiSleep 3;
 execVM "addons\scripts\protectionRemember.sqf";
 firstCheck = 0; 
-execVM "addons\modChecker\modChecker.sqf";
+execVM "addons\modChecker\init\modCheckerInit.sqf";
 
 */
